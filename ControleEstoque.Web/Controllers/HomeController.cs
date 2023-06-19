@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Controle_Estoque.Web.Controllers
+namespace ControleEstoque.Web.Controllers
 {
     public class HomeController : Controller
     {
