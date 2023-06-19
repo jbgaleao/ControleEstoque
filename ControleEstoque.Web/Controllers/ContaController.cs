@@ -1,4 +1,5 @@
-﻿using ControleEstoque.Web.Models;
+﻿using Controle_Estoque.Web.Models;
+using ControleEstoque.Web.Models;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -23,7 +24,7 @@ namespace ControleEstoque.Web.Controllers
                 return View(login);
             }
 
-            var achou = (login.Usuario == "jbg" && login.Senha == "123");
+            var achou = UsuarioModel.ValidarUsuario(login.Usuario,login.Senha);
 
             if (achou)
             {
